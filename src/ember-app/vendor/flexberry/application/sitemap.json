@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Cars",
+  "applicationTitle": "Cars",
+  "items": [
+    {
+      "link": null,
+      "menuName": "cars",
+      "caption": "Cars",
+      "title": "Cars",
+      "children": [
+        {
+          "link": "i-i-s-cars-car-l",
+          "menuName": null,
+          "caption": "Car",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-cars-driver-l",
+          "menuName": null,
+          "caption": "Driver",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

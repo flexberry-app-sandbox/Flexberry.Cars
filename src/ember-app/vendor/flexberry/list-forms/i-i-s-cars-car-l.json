@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-cars-car-e",
+  "editForm": "i-i-s-cars-car-e",
+  "external": false,
+  "caption": "Car",
+  "name": "IISCarsCarL",
+  "className": "CarL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-cars-car",
+      "modelProjection": "CarL"
+    }
+  ]
+}

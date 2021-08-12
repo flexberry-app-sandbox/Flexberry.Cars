@@ -1,0 +1,148 @@
+﻿{
+  "name": "IISCarsCar",
+  "modelName": "i-i-s-cars-car",
+  "className": "Car",
+  "nameSpace": "IIS.Cars",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "model",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "speed",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "driver",
+      "relatedTo": "i-i-s-cars-driver",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "CarE",
+      "modelName": "i-i-s-cars-car",
+      "attrs": [
+        {
+          "name": "model",
+          "caption": "Model",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "color",
+          "caption": "Color",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "speed",
+          "caption": "Speed",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "name",
+          "lookupValueField": "name",
+          "relationName": "Driver",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Driver",
+          "name": "driver",
+          "relatedTo": "i-i-s-cars-driver",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "CarL",
+      "modelName": "i-i-s-cars-car",
+      "attrs": [
+        {
+          "name": "model",
+          "caption": "Model",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "color",
+          "caption": "Color",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "speed",
+          "caption": "Speed",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Driver",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "driver",
+          "relatedTo": "i-i-s-cars-driver",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
