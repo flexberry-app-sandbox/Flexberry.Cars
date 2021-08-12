@@ -9,7 +9,7 @@
     "Validate": false,
     "Frontend": {
       "EmberJs": {
-        "EmberApp": false,
+        "EmberApp": true,
         "EmberAddon": false,
         "Build": false,
         "GitClone": false,
@@ -24,10 +24,10 @@
     "Backend": {
       "AspNet": false,
       "AspNetCore": false,
-      "Java": false
+      "Java": true
     },
     "Docker": {
-      "Dockerfile": false,
+      "Dockerfile": true,
       "DockerfileAutobuild": false,
       "DockerBuildShellScript": false,
       "DockerSwarm": false
